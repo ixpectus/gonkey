@@ -1,4 +1,4 @@
-module github.com/lamoda/gonkey
+module github.com/ixpectus/gonkey
 
 go 1.14
 
