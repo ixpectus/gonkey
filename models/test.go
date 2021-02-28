@@ -7,6 +7,7 @@ type TestInterface interface {
 	ToJSON() ([]byte, error)
 	GetMethod() string
 	Path() string
+	GetHost() string
 	GetResponses() map[int]string
 	GetResponse(code int) (string, bool)
 	GetResponseHeaders(code int) (map[string]string, bool)

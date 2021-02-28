@@ -38,6 +38,9 @@ func newClient() (*http.Client, error) {
 
 func newRequest(host string, test models.TestInterface) (req *http.Request, err error) {
 
+	if test.GetHost() != "" {
+		host = test.GetHost()
+	}
 	if test.GetForm() != nil {
 		req, err = newMultipartRequest(host, test)
 		if err != nil {
