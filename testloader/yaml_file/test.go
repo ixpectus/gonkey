@@ -29,8 +29,8 @@ func (t *Test) Path() string {
 	return t.RequestURL
 }
 
-func (t *Test) GetHost() string {
-	return t.Host
+func (t *Test) Host() string {
+	return t.RequestHost
 }
 
 func (t *Test) GetRequest() string {

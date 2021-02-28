@@ -9,6 +9,7 @@ type TestDefinition struct {
 	Form               *models.Form              `json:"form" yaml:"form"`
 	Method             string                    `json:"method" yaml:"method"`
 	RequestURL         string                    `json:"path" yaml:"path"`
+	RequestHost        string                    `json:"host" yaml:"host"`
 	QueryParams        string                    `json:"query" yaml:"query"`
 	RequestTmpl        string                    `json:"request" yaml:"request"`
 	ResponseTmpls      map[int]string            `json:"response" yaml:"response"`
